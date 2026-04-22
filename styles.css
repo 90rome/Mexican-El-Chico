@@ -84,6 +84,78 @@ body {
   background-color: transparent;
   color: white;
 }
+.about-container {
+  height: 90vh;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+.header {
+  color: #f3d2a4;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 0, 0, 0.301);
+  display: flex;
+  margin: 0 0 2rem 0;
+}
+.text {
+  color: #f3d2a4;
+  display: flex;
+  flex-direction: colem;
+}
+.header-action-button {
+  width: 15rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  color: #f1b2b2;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.header-action-button:hover {
+  background-color: transparent;
+  color: white;
+}
+.collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  gap: 10px;
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+/* Bild größer machen */
+.collage img:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.collage img:nth-child(2) {
+  grid-column: span 2;
+}
+.collage img:nth-child(3) {
+  grid-column: span 2;
+}
+.time {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
+    url("zeiten.jpg") center/cover no-repeat;
+}
 
 @media only screen and (min-width: 600px) {
   .title {
