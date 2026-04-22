@@ -13,6 +13,35 @@ body {
   background-color: #1a1a1a;
   color: #ff;
   font-family: "Inter", sans-serif;
+  --primary-color: #c65a2e;
+}
+
+.nav {
+  height: 4rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 10px;
+  /*alternativ
+  overflow-wrap: break-word;
+  hyphens: auto;*/
+}
+.nav-item {
+  font-family: "Inter", sans-serif;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover {
+  color: white;
+  color: var(--primary-color);
+  background-color: transparent;
 }
 
 .hero {
@@ -44,41 +73,16 @@ body {
   padding: 1rem 2rem;
   border: 1px solid transparent;
   color: #f1b2b2;
-  background-color: #c65a2e;
-  border: #c65a2e solid;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid;
   border-radius: 15px;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .hero-action-button:hover {
   background-color: transparent;
   color: white;
-  transition: all 0.5s ease-in-out;
-}
-
-.nav {
-  height: 4rem;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 0 10px;
-}
-.nav-item {
-  font-family: "Inter", sans-serif;
-  color: white;
-  text-decoration: none;
-
-  overflow-wrap: break-word;
-  hyphens: auto;
-  text-transform: uppercase;
-}
-
-.nav-item:hover {
-  color: white;
-  color: rgba(143, 42, 6, 0.89);
-  background-color: transparent;
 }
 
 @media only screen and (min-width: 600px) {
@@ -92,20 +96,8 @@ body {
   .nav {
     font-size: 20px;
   }
-  @media only screen and (min-width: 768px) {
-    .title {
-      font-size: 6rem;
-      line-height: 5rem;
-    }
-    .subtitle {
-      font-size: 40px;
-    }
-    .nav {
-      font-size: 25px;
-    }
-  }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1000px) {
     .title {
       font-size: 7rem;
       line-height: 6rem;
@@ -114,7 +106,8 @@ body {
       font-size: 40px;
     }
     .nav {
-      font-size: 25px;
+      font-size: 1.5rem;
+      gap: 4rem;
     }
   }
 }
