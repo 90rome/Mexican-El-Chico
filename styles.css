@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
+
+.Platzhalter {
+  height: 300vh;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
+    url("MexFood.jpg") center/cover no-repeat;
+}
+.title {
+  font-family: "Caveat Brush", cursive, sans-serif;
+  color: #f3d2a4;
+  line-height: 4rem;
+  margin: 0 0 2rem 0;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #f5e6d3;
+}
+.hero-action-button {
+  /*width: fit-content;*/
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #c65a2e;
+  border: #c65a2e solid;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-action-button:hover {
+  background-color: transparent;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+*.nav {
+  font-size: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ead1b4;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.nav-item {
+  font-family: "Inter", sans-serif;
+  color: rgba(143, 42, 6, 0.89);
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav-item:hover {
+  color: white;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .title {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+    .subtitle {
+      font-size: 40px;
+    }
+    .nav-item {
+      padding: 10px;
+    }
+    .nav {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .title {
+      font-size: 7rem;
+      line-height: 6rem;
+    }
+    .subtitle {
+      font-size: 40px;
+    }
+    .nav {
+      font-size: 25px;
+    }
+  }
+}
