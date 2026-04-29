@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: #1a1a1a;
-  color: #ff;
+  color: #fff;
   font-family: "Inter", sans-serif;
   --primary-color: #c65a2e;
   --text-color: #f5e6d3;
@@ -133,37 +133,45 @@ body {
   gap: 0.5rem;
 }
 /*Start 3 Section*/
-.about-times {
-  margin-top: 4vh;
-  height: 53vh;
+.hours {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.info .heading {
+  margin: 0 auto;
+}
+.hours-entry {
+  /*abstand dazwichen*/
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.days {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.info-wrapper {
+  padding: 2rem 0;
+  margin: 3rem 0;
   background:
     linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
     url("la catrina.jpg") center/cover no-repeat;
 }
-.time {
-  width: fit-content;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  border-bottom: 1px solid var(--primary-color);
-  color: var(--text-color);
-}
-.left {
+.about-us {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-}
-.right {
-  display: flex;
-  flex-direction: row;
 }
 
-.about-day {
-  font-size: 0.9rem;
-  color: var(--text-color);
+.about-us-large {
+  width: 100%;
+}
+.us {
 }
 
 @media only screen and (min-width: 600px) {
@@ -183,31 +191,48 @@ body {
   .about-text {
     font-size: 1rem;
   }
-}
-
-@media only screen and (min-width: 1000px) {
-  .title {
-    font-size: 7rem;
-    line-height: 6rem;
-  }
-  .subtitle {
-    font-size: 40px;
-  }
-  .nav {
-    font-size: 1.5rem;
-    gap: 4rem;
-  }
-  .heading {
-    font-size: 2rem;
-  }
   .about {
     grid-template-columns: 1fr 1fr;
-    margin-top: 6rem;
+    margin-top: 4rem;
     align-items: center;
   }
-  .about-images,
-  .about-image-small {
-    gap: 1rem;
+
+  @media only screen and (min-width: 1000px) {
+    .title {
+      font-size: 7rem;
+      line-height: 6rem;
+    }
+    .subtitle {
+      font-size: 40px;
+    }
+    .nav {
+      font-size: 1.5rem;
+      gap: 4rem;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+    .about {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 6rem;
+      align-items: center;
+    }
+    .about-images,
+    .about-image-small {
+      gap: 1rem;
+    }
+    .hours-entry {
+      width: 20rem;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hours {
+      margin-top: 2rem;
+    }
+    .info-wrapper {
+      margin: 6rem 0;
+      padding: 6rem;
+    }
   }
 }
 @media only screen and (min-width: 1400px) {
