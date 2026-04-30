@@ -110,6 +110,7 @@ body {
 .about-text {
   font-size: 0.9rem;
   color: var(--text-color);
+  text-decoration: none;
 }
 .about-action {
   margin-top: 2rem;
@@ -196,6 +197,17 @@ body {
     margin-top: 4rem;
     align-items: center;
   }
+  .footer {
+    gap: 3rem;
+  }
+  .copyright {
+    display: flexbox;
+    margin: 1rem 0;
+    align-items: center;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
 
   @media only screen and (min-width: 1000px) {
     .title {
@@ -232,6 +244,9 @@ body {
     .info-wrapper {
       margin: 6rem 0;
       padding: 6rem;
+    }
+    .footer {
+      gap: 5rem;
     }
   }
 }
