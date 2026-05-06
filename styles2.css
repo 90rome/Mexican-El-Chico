@@ -29,7 +29,8 @@ body {
 
 .menu-header h1 {
   font-size: 3rem;
-  color: #b43b1d;
+  font-family: "Caveat Brush", cursive, sans-serif;
+  color: var(--primary-color)
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -90,6 +91,26 @@ body {
   color: #b43b1d;
   white-space: nowrap;
   font-size: 1.1rem;
+}
+
+.back-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #f1b2b2;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+}
+.back-btn:hover {
+  background-color: transparent;
+  color: white;
 }
 
 @media (min-width: 768px) {
