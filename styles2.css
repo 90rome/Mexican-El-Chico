@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +7,9 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background:
+    linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
+    url("Solo2.png") center/cover no-repeat;
   color: var(--primary-color);
   font-family: "Inter", sans-serif;
   --primary-color: #c65a2e;
@@ -15,6 +19,11 @@ body {
 .title {
   font-family: "Caveat Brush", cursive, sans-serif;
   color: #f3d2a4;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 .menu-section {
   width: 90%;
@@ -22,6 +31,13 @@ body {
   padding: 4rem 1.5rem;
 }
 
+.menu-section p {
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
 .menu-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -30,7 +46,7 @@ body {
 .menu-header h1 {
   font-size: 3rem;
   font-family: "Caveat Brush", cursive, sans-serif;
-  color: var(--primary-color)
+  color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -47,7 +63,7 @@ body {
 }
 
 .menu-category {
-  background: var(--text-color);
+  background: rgba(20, 20, 20, 0.85);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -100,8 +116,8 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   color: #f1b2b2;
-  background-color: var(--primary-color);
-  border: var(--primary-color) solid;
+  background-color: #c6592e98;
+  border: #c6592e98 solid;
   border-radius: 15px;
   text-decoration: none;
   cursor: pointer;
@@ -113,8 +129,12 @@ body {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  
   }
 }
