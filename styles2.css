@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+  --primary-color: #c65a2e;
+  --text-color: #f3d2a4;
+  --menu-color: #646262;
+}
+.title {
+  font-family: "Caveat Brush", cursive, sans-serif;
+  color: #f3d2a4;
+}
+.menu-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu-header h1 {
+  font-size: 3rem;
+  color: #b43b1d;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.menu-category {
+  background: var(--text-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.menu-category h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e0b36a;
+  padding-bottom: 0.5rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 1rem;
+}
+
+.menu-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.menu-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.menu-text p {
+  font-size: 0.95rem;
+  color: var(--menu-color);
+}
+
+.price {
+  font-weight: bold;
+  color: #b43b1d;
+  white-space: nowrap;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
 
-.platzhalter {
-  height: 300vh;
-}
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +29,8 @@ body {
   width: 100%;
   padding: 0 10px;
 }
-.nav-item {
+.nav-item,
+.footer-item {
   font-family: "Inter", sans-serif;
   color: white;
   text-decoration: none;
@@ -41,7 +39,8 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.footer-item:hover {
   color: white;
   color: var(--primary-color);
   background-color: transparent;
@@ -78,7 +77,9 @@ body {
   max-width: 85%;
   margin: 0 auto;
 }
-.button {
+.button,
+.button-inverted {
+  width: fit-content;
   display: inline-block;
   padding: 1rem 2rem;
   color: #f1b2b2;
@@ -89,9 +90,20 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+
+.button-inverted {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
 .button:hover {
   background-color: transparent;
   color: white;
+}
+
+.button-inverted:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 /*Start 2 Section*/
 .heading {
@@ -116,7 +128,7 @@ body {
   margin-top: 2rem;
 }
 .about-images {
-  width: 100%;
+  width: 70%;
   display: flex;
   gap: 0.5rem;
 }
@@ -164,24 +176,57 @@ body {
     linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
     url("la catrina.jpg") center/cover no-repeat;
 }
-.about-us {
-  width: 100%;
+/*start Section 2 */
+.contact-content {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact .heading {
+  margin-top: 0;
 }
 
-.about-us-large {
-  width: 100%;
+.contact-detail {
+  margin-top: 0.5rem;
+  color: var(--text-color);
 }
-.us {
-}
-.footer {
-  margin: 3.5rem 0;
-  font-size: 0.8rem;
+
+.contact-actions {
+  margin-top: 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contact-image {
   width: 100%;
+}
+
+/*ende Section 2 */
+/*start Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #303030;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  color: var(--text-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -192,70 +237,94 @@ body {
   .subtitle {
     font-size: 30px;
   }
-  .button {
+  .button,
+  .button-inverted {
     padding: 1.2rem 2.5rem;
   }
-  .nav {
-    font-size: 20px;
+  .nav,
+  .footer-item {
+    font-size: 1rem;
+    gap: 2rem;
   }
   .about-text {
     font-size: 1rem;
   }
-  .about {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 4rem;
+  /*start Section 2 */
+  .contact-content {
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+  }
+  .contact-image {
+    width: 50%;
+  }
+  .contact-actions {
+    flex-direction: row;
   }
   .footer {
+    margin-top: 2rem;
+    padding: 3rem 0;
     gap: 3rem;
   }
-  .copyright {
-    display: flexbox;
-    align-items: center;
-    font-size: 1rem;
-  }
 
-  @media only screen and (min-width: 1000px) {
-    .title {
-      font-size: 7rem;
-      line-height: 6rem;
-    }
-    .subtitle {
-      font-size: 40px;
-    }
-    .nav {
-      font-size: 1.5rem;
-      gap: 4rem;
-    }
-    .heading {
-      font-size: 2rem;
-    }
-    .about {
-      grid-template-columns: 1fr 1fr;
-      margin-top: 6rem;
-      align-items: center;
-    }
-    .about-images,
-    .about-image-small {
-      gap: 1rem;
-    }
-    .hours-entry {
-      width: 20rem;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .hours {
-      margin-top: 2rem;
-    }
-    .info-wrapper {
-      margin: 6rem 0;
-      padding: 6rem;
-    }
-    .footer {
-      gap: 5rem;
-    }
+  .footer-links {
+    flex-direction: row;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
+  .nav,
+  .footer-links {
+    font-size: 1.5rem;
+    gap: 4rem;
+  }
+
+  .footer {
+    margin-top: 6rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .about {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    align-items: center;
+  }
+  .about-images,
+  .about-image-small {
+    gap: 1rem;
+  }
+  .hours-entry {
+    width: 20rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .hours {
+    margin-top: 2rem;
+  }
+  .info-wrapper {
+    margin: 6rem 0;
+    padding: 6rem;
+  }
+  .contact .heading {
+    margin-bottom: 2rem;
+  }
+  .contact-detail {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .contact-image {
+    width: 50%;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
