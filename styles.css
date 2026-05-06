@@ -55,7 +55,7 @@ body {
   text-align: center;
   background:
     linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
-    url("MexFood.jpg") center/cover no-repeat;
+    url("Picture/backgroundMexFood.jpg") center/cover no-repeat;
 }
 .title {
   font-family: "Caveat Brush", cursive, sans-serif;
@@ -174,7 +174,7 @@ body {
   margin: 3rem 0;
   background:
     linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
-    url("la catrina.jpg") center/cover no-repeat;
+    url("Picture/la catrina.jpg") center/cover no-repeat;
 }
 /*start Section 2 */
 .contact-content {

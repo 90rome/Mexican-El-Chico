@@ -9,7 +9,7 @@
 body {
   background:
     linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
-    url("Solo2.png") center/cover no-repeat;
+    url("Picture/Solo2.png") center/cover no-repeat;
   color: var(--primary-color);
   font-family: "Inter", sans-serif;
   --primary-color: #c65a2e;
