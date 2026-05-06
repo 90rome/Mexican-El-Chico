@@ -27,8 +27,7 @@ h1 {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
-  border-bottom: 4px solid #c62828;
-  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-color);
   text-align: center;
 }
 

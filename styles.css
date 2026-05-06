@@ -198,7 +198,9 @@ body {
   gap: 0.75rem;
 }
 .contact-image {
-  width: 100%;
+  min-;width: 390px;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 /*ende Section 2 */

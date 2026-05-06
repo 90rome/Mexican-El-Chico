@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  ffont-family: "Inter", sans-serif;
+  --primary-color: #c65a2e;
+  --text-color: #f5e6d3;
+  background:
+    linear-gradient(rgba(40, 18, 10, 0.35), rgba(40, 18, 10, 0.35)),
+    url("Picture/El\ Chico.png") center/cover no-repeat;
+}
+
+.impressum-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.impressum-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  color: var(--text-color);
+  background: rgba(20, 20, 20, 0.637);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Caveat Brush", cursive, sans-serif;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.back-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #f1b2b2;
+  background-color: #c6592e98;
+  border: #c6592e98 solid;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+}
+
+.back-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .impressum-card {
+    font-size: 1.2rem;
+  }
+}
